@@ -93,72 +93,26 @@ Then place a load of 5 N on the test wire and find the extension, \( x \). Repea
 
 <h1>Extension:</h1>
 
-By comparing the Young modulus to <a href = "https://www.engineeringtoolbox.com/young-modulus-d_417.html">known constants</a>) it would be possible to determine the type of metal the wire was made from.
+By comparing the Young modulus to <a href = "https://www.engineeringtoolbox.com/young-modulus-d_417.html">known constants</a> it would be possible to determine the type of metal the wire was made from.
 
+<h1>Further guidance</h1>
 
-
-		 <h1>Further guidance</h1>
-
-	 <h1>Simulation</h1>
-		 Below we have some python code that will simulate your results.<br>
-		 You will notice a number of variables that you might like to investigate to see how they might affect your investigation - these include the initial population (the number of dice you start with) and the number of experiments you do (they will be automatically averaged) <br>
-		 Each time you chage a variable, click "Evaluate" to re-run the code.
-
-     <div class="sage">
-      <script type="text/x-sage"># some library objects we need
-from numpy.random import binomial, seed
+Use appropriate analogue apparatus to record a range of measurements (to include length/distance, temperature, pressure, force, angles, volume) and to interpolate between scale markings.
+<ul>
+<li> Use calipers and micrometers for small distances, using digital or vernier scales.</li>
+<li> Use ICT such as computer modelling, or data logger with a variety of sensors to collect data, or use of software to process data.</li>
+</ul>
+<h1>Simulation</h1>
+Below we have some python code that will simulate your results.<br>
+<div class="sage">
+<script type="text/x-sage"># some library objects we need
 from numpy import zeros, arange
 from matplotlib import pyplot as plt
-# initial population
-P0 = 80
 
-# number of rolls per experiment
-n_rolls = 50
+data = (0, 0), (77.2, 0.00109), (154.4, 0.00217), (231.7, 0.00326), (308.9, 0.00437), (328.2, 0.00470), (347.5, 0.00514), (366.8, 0.00589), (386.1, 0.00744), (394.4, 0.00860), (402.7, 0.01026), (410.9, 0.01265), (419.2, 0.01609), (427.5, 0.02102), (435.7 ,0.02806) (444.0 ,0.03807) (452.3 ,0.05222) (460.5 ,0.07214) (468.8 ,0.10000)
 
-# number of experiments
-n_exp = 1
-
-# probability that any given die will "decay" on a given roll
-p = 1/6
-# location to track average dice remaining for each roll number
-pop_avg = zeros(n_rolls+1)
-
-# "seed" the random number generator
-# (This makes the results look different
-# each time the code is run.)
-seed()
-
-# loop over experiments
-for n in range(n_exp):
-
-  # reset the dice population
-  P = P0
-
-  # roll the dice
-  for k in range(1,n_rolls+1):
-
-    # figure out how many dice decay this time
-    r = binomial(P,p)
-
-    # remove the dice
-    P -= r
-
-    # update the average
-    pop_avg[k] += P
-
-# final division to compute the averages
-pop_avg /= n_exp
-
-# we always started with P0
-pop_avg[0] = P0
-
-# compute the model predictions
-model = (1.0-p)**arange(n_rolls+1.0)*P0
-
-pl1 = list_plot(pop_avg,plotjoined=True,marker='+',legend_label='Model results',axes_labels=['roll #', '# dice'])
-pl2 = list_plot(model,plotjoined=True,linestyle='--',color='red',marker='x',legend_label='Theoretical curve')
-
-show(pl1+pl2)
+pl1 = list_plot(data,plotjoined=True,marker='x',axes_labels=['Strain', 'Stress [MPa]'])
+show(pl1)
       </script>
      </div>
 
