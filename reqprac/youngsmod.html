@@ -102,8 +102,9 @@ Use appropriate analogue apparatus to record a range of measurements (to include
 <li> Use calipers and micrometers for small distances, using digital or vernier scales.</li>
 <li> Use ICT such as computer modelling, or data logger with a variety of sensors to collect data, or use of software to process data.</li>
 </ul>
-<h1>Simulation</h1>
-Below we have some python code that will simulate your results.<br>
+<h1>Results</h1>
+Below we have some python code that will plot a graph to show you what your results might look like, you could modify this code to plot your own results.<br>
+ <br>
 <div class="sage">
 <script type="text/x-sage"># some library objects we need
 from numpy import zeros, arange
@@ -116,41 +117,8 @@ show(pl1)
       </script>
      </div>
 
-     <h1>Your results</h1>
-
-          <div class="sage">
-      <script type="text/x-sage"># some library objects we need
-from numpy.random import binomial, seed
-from numpy import zeros, arange
-from matplotlib import pyplot as plt
-# initial population - needed for modelling the theoretical line
-P0 = 80
-
-# number of rolls in your experiment - needed for modelling the theoretical line
-n_rolls =
-
-# Probability of decay - needed for modelling the theoretical line
-
-p= 1/6
-
-
-# compute the model predictions
-model = (1.0-p)**arange(n_rolls+1.0)*P0
-
-# Enter your results as pairs of figures, add more brackets when you need to:
-
-results = (1, y), (2, y), (3, y), (4, y), (5, y), (6, y), (7, y), (8, y), (9, y), (10, y), (11, y), (12, y)
-
-pl1 = list_plot(results,plotjoined=True,marker='+',legend_label='averaged',axes_labels=['roll #', '# dice'])
-pl2 = list_plot(model,plotjoined=True,linestyle='--',color='red',marker='x',legend_label='model')
-
-show(pl1+pl2)
-      </script>
-     </div>
-
-
      <h1>Conclusions</h1>
-
+Compare your results to databook values.
         </div>
 
         <div class="col-md-2">
