@@ -37,6 +37,7 @@ https://www.youtube.com/watch?v=5ZnKIPfIhAQ&
 
 [Research paper](http://www2.ph.ed.ac.uk/~amorozov/files/TEACHING/tippetop.pdf)
 
+## Tippy tops too
 </section>
 
 <section data-markdown data-notes="^Note:">
