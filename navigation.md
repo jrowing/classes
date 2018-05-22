@@ -6,7 +6,7 @@ navigation: 2
 
 # Display Mathematics
 
-The Mathematics on this site is typeset in <div>`$ \latex $`</div> and rendered by [https://www.mathjax.org/](https://www.mathjax.org/)
+The Mathematics on this site is typeset in <div>`$$ \latex $$`</div> and rendered by [https://www.mathjax.org/](https://www.mathjax.org/)
 
 To give you an example, the drake equation, which helps estimate the number of planets which might contain intelligent life is:
 
