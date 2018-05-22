@@ -1,7 +1,6 @@
 ---
 layout: slide
 title: testing
-navigation: 0
 ---
 
 <section data-markdown data-notes="^Note:">
