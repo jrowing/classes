@@ -27,17 +27,19 @@ https://www.youtube.com/watch?v=5ZnKIPfIhAQ&
 </section>
 
 <section data-markdown data-notes="^Note:">
-  <section>
+
 # Tippy-Tops 
 
 [Research paper](http://www2.ph.ed.ac.uk/~amorozov/files/TEACHING/tippetop.pdf)
   </section>
   <section data-markdown data-notes="^Note:">
 
-Tippy tops too
+## Tippy tops too
   </section>
 
   <section data-markdown data-notes="^Note:">
+  ## Tippy tops too
+
 ![](https://upload.wikimedia.org/wikipedia/commons/9/99/Pauli_wolfgang_c4.jpg)
 
   </section>
@@ -52,7 +54,7 @@ Tippy tops too
 ![](https://d2mxuefqeaa7sj.cloudfront.net/s_4235D22A09481E808DFC52DC955CFC94A15841728A71E62850796478A6F642C2_1497297127472_image.png)
 
   </section>
- </section>
+ 
 
 # Rattlebacks
 
