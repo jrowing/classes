@@ -4,25 +4,19 @@ title: Woah
 ---
 <section data-markdown data-notes="^Note:"># Woah!
 ![](https://filedb.experts-exchange.com/incoming/2015/11_w46/1008861/macbook-air-balloon.jpg)
-
 </section>
 
 <section data-markdown data-notes="^Note:">
 # Stability
 ![](https://image.slidesharecdn.com/centreofgravityandstabilitystuver-100518122326-phpapp02/95/centre-of-gravity-and-stability-21-728.jpg?cb=1274185916)
-
 </section>
 
 <section data-markdown data-notes="^Note:">
   ![](http://i.imgur.com/y7EOXme.jpg)
-
-
 </section>
 
 <section data-markdown data-notes="^Note:">
-
 # What Happens Next:
-
 https://www.youtube.com/watch?v=5ZnKIPfIhAQ&
 </section>
 
@@ -31,35 +25,33 @@ https://www.youtube.com/watch?v=5ZnKIPfIhAQ&
 [https://youtu.be/5ZnKIPfIhAQ](https://youtu.be/5ZnKIPfIhAQ)
 
 </section>
-<section data-markdown data-notes="^Note:">
 
 <section data-markdown data-notes="^Note:">
+  <section data-markdown data-notes="^Note:">
 # Tippy-Tops 
 
 [Research paper](http://www2.ph.ed.ac.uk/~amorozov/files/TEACHING/tippetop.pdf)
-</section>
-<section data-markdown data-notes="^Note:">
+  </section>
+  <section data-markdown data-notes="^Note:">
 
 Tippy tops too
-</section>
+  </section>
 
-<section data-markdown data-notes="^Note:">
+  <section data-markdown data-notes="^Note:">
 ![](https://upload.wikimedia.org/wikipedia/commons/9/99/Pauli_wolfgang_c4.jpg)
 
-</section>
+  </section>
 
-<section data-markdown data-notes="^Note:">
+  <section data-markdown data-notes="^Note:">
 
 ![](https://d2mxuefqeaa7sj.cloudfront.net/s_4235D22A09481E808DFC52DC955CFC94A15841728A71E62850796478A6F642C2_1497297103137_image.png)
 
-</section>
+  </section>
 
-<section data-markdown data-notes="^Note:">
+  <section data-markdown data-notes="^Note:">
 ![](https://d2mxuefqeaa7sj.cloudfront.net/s_4235D22A09481E808DFC52DC955CFC94A15841728A71E62850796478A6F642C2_1497297127472_image.png)
 
-</section>
-
-<section data-markdown data-notes="^Note:">
+  </section>
  </section>
 
 # Rattlebacks
