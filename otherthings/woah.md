@@ -33,12 +33,14 @@ https://www.youtube.com/watch?v=5ZnKIPfIhAQ&
 </section>
 <section data-markdown data-notes="^Note:">
 
+<section data-markdown data-notes="^Note:">
 # Tippy-Tops 
 
 [Research paper](http://www2.ph.ed.ac.uk/~amorozov/files/TEACHING/tippetop.pdf)
-
+</section>
 <section data-markdown data-notes="^Note:">
-## Tippy tops too
+
+Tippy tops too
 </section>
 
 <section data-markdown data-notes="^Note:">
