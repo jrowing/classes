@@ -25,7 +25,7 @@ https://www.youtube.com/watch?v=5ZnKIPfIhAQ&
 [https://youtu.be/5ZnKIPfIhAQ](https://youtu.be/5ZnKIPfIhAQ)
 
 </section>
-
+<section>
 <section data-markdown data-notes="^Note:">
 
 # Tippy-Tops 
@@ -54,7 +54,7 @@ https://www.youtube.com/watch?v=5ZnKIPfIhAQ&
 ![](https://d2mxuefqeaa7sj.cloudfront.net/s_4235D22A09481E808DFC52DC955CFC94A15841728A71E62850796478A6F642C2_1497297127472_image.png)
 
   </section>
- 
+ </section>
 <section data-markdown data-notes="^Note:">
 # Rattlebacks
 
