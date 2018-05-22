@@ -31,6 +31,3 @@ navigation: 3
 |        19  |    Revision   |         |          |      |
 |        20  |    Mocks   |         |          |      |
 |        21   |   Assessments    |         |          |      |
-|        22   |       |         |          |      |
-|           |       |         |          |      |
-|           |       |         |          |      |
