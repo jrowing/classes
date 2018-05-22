@@ -10,7 +10,7 @@ The navigation supports especially only one level. If you need deep nested struc
 
 ## Model equation
  The equation of the theoretical curve is:
- <div>`$$ N= N_{0} e^{- \lambda t} \] $$`<\div>
+ <div>\[ N= N_{0} e^{- \lambda t} \]<\div>
  
  <div>`$$ N = S \times f_{p} \times n_{e} \times f_{l} \times f_{i} \times f_{c} \times f_{L} $$`</div>
 
