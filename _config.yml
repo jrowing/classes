@@ -1,6 +1,6 @@
-title: Millidocs Theme
-description: Documentation for small projects
-url: "https://github.com/alexander-heimbuch/millidocs" # the base hostname & protocol for your site, e.g. http://example.com
+title: Physics A-level
+description: Documentation and info for A-level Physics at EMS
+url: "https://jrowing.com/classes" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
