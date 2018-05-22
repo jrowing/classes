@@ -10,7 +10,7 @@ The navigation supports especially only one level. If you need deep nested struc
 
 ## Model equation
  The equation of the theoretical curve is:
-	 \[ N= N_{0} e^{- \lambda t} \]
+ \[ N= N_{0} e^{- \lambda t} \]
 
 ### Simulation
 Below we have some python code that will simulate your results.<br>
