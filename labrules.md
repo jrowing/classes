@@ -1,9 +1,10 @@
 ---
 layout: default
+title: Laboratory Rules
 navigation: 3
 ---
 
-#Laboratory Rules
+# Laboratory Rules
 The biggest danger in the lab is YOU! You are at risk when you don’t understand the hazards or you are careless, or both. The person most likely to suffer from your mistakes is YOU! 
 
 1.	Only enter a lab when told to do so by a teacher. Never rush about or throw things in the lab. Keep your bench and floor area clear, with bags and coats well out of the way.
