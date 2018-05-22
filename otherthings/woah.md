@@ -37,6 +37,7 @@ https://www.youtube.com/watch?v=5ZnKIPfIhAQ&
 
 [Research paper](http://www2.ph.ed.ac.uk/~amorozov/files/TEACHING/tippetop.pdf)
 
+<section data-markdown data-notes="^Note:">
 ## Tippy tops too
 </section>
 
@@ -57,6 +58,8 @@ https://www.youtube.com/watch?v=5ZnKIPfIhAQ&
 </section>
 
 <section data-markdown data-notes="^Note:">
+ </section>
+
 # Rattlebacks
 
 
