@@ -1,20 +1,20 @@
 ---
 layout: page
-title: Navigation
+title: Mathematics
 navigation: 2
 ---
 
-# Navigation
+# Display Mathematics
 
-The navigation supports especially only one level. If you need deep nested structures you propably should use a larger documentation system like [GitBook](https://www.gitbook.com/).
+The Mathematics on this site is typeset in <div>`$ \latex $`</div> and rendered by [https://www.mathjax.org/](https://www.mathjax.org/)
 
-## Model equation
- The equation of the theoretical curve is:
- <div>\[ N= N_{0} e^{- \lambda t} \] </div>
- 
+To give you an example, the drake equation, which helps estimate the number of planets which might contain intelligent life is:
+
  <div>`$$ N = S \times f_{p} \times n_{e} \times f_{l} \times f_{i} \times f_{c} \times f_{L} $$`</div>
+ 
+ by right clicking on this you can copy the equation, or change the way in which it is rendered.
 
-### Simulation
+### Interactive mathematics
 Below we have some python code that will simulate your results.<br>
 You will notice a number of variables that you might like to investigate to see how they might affect your investigation - these include the initial population (the number of dice you start with) and the number of experiments you do (they will be automatically averaged) <br>
 Each time you chage a variable, click "Evaluate" to re-run the code.
