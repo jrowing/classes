@@ -27,7 +27,7 @@ https://www.youtube.com/watch?v=5ZnKIPfIhAQ&
 </section>
 
 <section data-markdown data-notes="^Note:">
-  <section data-markdown data-notes="^Note:">
+  <section>
 # Tippy-Tops 
 
 [Research paper](http://www2.ph.ed.ac.uk/~amorozov/files/TEACHING/tippetop.pdf)
