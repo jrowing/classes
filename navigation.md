@@ -13,12 +13,11 @@ The navigation supports especially only one level. If you need deep nested struc
 	 \[ N= N_{0} e^{- \lambda t} \]
 
 ### Simulation
-		 Below we have some python code that will simulate your results.<br>
-		 You will notice a number of variables that you might like to investigate to see how they might affect your investigation - these include the initial population (the number of dice you start with) and the number of experiments you do (they will be automatically averaged) <br>
-		 Each time you chage a variable, click "Evaluate" to re-run the code.
-
-     <div class="sage">
-      <script type="text/x-sage"># some library objects we need
+Below we have some python code that will simulate your results.<br>
+You will notice a number of variables that you might like to investigate to see how they might affect your investigation - these include the initial population (the number of dice you start with) and the number of experiments you do (they will be automatically averaged) <br>
+Each time you chage a variable, click "Evaluate" to re-run the code.
+<div class="sage">
+<script type="text/x-sage"># some library objects we need
 from numpy.random import binomial, seed
 from numpy import zeros, arange
 from matplotlib import pyplot as plt
@@ -57,8 +56,8 @@ model = (1.0-p)**arange(n_rolls+1.0)*P0
 pl1 = list_plot(pop_avg,plotjoined=True,marker='+',legend_label='Model results',axes_labels=['roll #', '# dice'])
 pl2 = list_plot(model,plotjoined=True,linestyle='--',color='red',marker='x',legend_label='Theoretical curve')
 show(pl1+pl2)
-      </script>
-     </div>
+</script>
+</div>
 
 ## Adding a Page to Navigation
 
