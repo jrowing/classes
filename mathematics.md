@@ -10,7 +10,7 @@ The Mathematics on this site is typeset in $$ \LaTeX $$ and rendered by [https:/
 
 To give you an example, the drake equation, which helps estimate the number of planets which might contain intelligent life is:
 
- <div>`$$ N = S \times f_{p} \times n_{e} \times f_{l} \times f_{i} \times f_{c} \times f_{L} $$`</div>
+ <div>$$ N = S \times f_{p} \times n_{e} \times f_{l} \times f_{i} \times f_{c} \times f_{L} $$</div>
  
  by right clicking on this you can copy the equation, or change the way in which it is rendered.
 
