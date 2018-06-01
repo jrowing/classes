@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>Physics at EMS</title>
+
+    <meta charset="utf-8">
+
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+      });
+    </script>
+    <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+    <script>sagecell.makeSagecell({"inputLocation": ".sage"});</script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.js"></script>
+
+    <style>
+      body {font-size: 200%; }
+      div.container { margin-top: 20px; margin-bottom: 100px; }
+      #main  h1 { margin-top: 50px; padding-top: 20px; border-top: 1px solid #cccccc; }
+      #main  h2 { margin-top: 40px; }
+      @media screen{ #main h1 { padding-top: 100px; } }
+      div.sage { padding-top: 20px; padding-bottom: 20px; font-size: 75%; }
+
+      nav[data-toggle='toc'] {
+      margin-top: 30px;
+      margin-left: 30px;
+      }
+    </style>
+
+  </head>
+  <body data-spy="scroll" data-target="#toc">
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <h1 data-toc-skip>Investigation of Newton's 2nd Law</h1>
+      by Joe Rowing<br>
+      last updated 1/06/2018
+    </div>
+  </div>
+</nav>
+    <div class="container" id="main">
+      <div class="row" style="margin-top: 20px;">
+
+        <div class="col-md-9">
+         <h1> Theory:</h1>
+		 
+		 The gravitational force of the masses attached to a car via a pulley causes the entire mass of the system to
+accelerate. This acceleration is proportional to the mass of the entire system, ie. the mass of the car, $M$, and the total mass of the slotted masses, $m$. 
+<br>
+Newton’s second law therefore, can be written as:
+
+$$ mg = (M+m)a $$
+
+and so the acceleration of the system is:
+$$ a = \frac{mg}{(M+m)} $$
+
+	<h1> Apparatus:</h1>
+<ul>	
+<li> Track </li> 
+<li>Low friction car of known mass</li>
+<li>Pulley </li>
+<li>Light Gates & Interface</li>
+<li>Masses</li>
+<li>Ruler with ± 0.001 m resolution</li>
+</ul>
+   
+
+<h1>Experimental Method:</h1>
+
+The apparatus should be set up as shown. <br>
+<img src="/classes/reqprac/Images/gbyfreefall.JPG">
+<br>
+Fix the thread to the rider and attach five slotted $5$ gram masses to the other end as shown in the diagram. Set the light gates to record the acceleration and allow the slotted masses to fall to the ground. Record the gravitational force, $mg$ and the acceleration, $a$. Remove one of the slotted masses and place it on the rider (so keeping the total mass of the system constant).<br>
+Repeat the experiment until all the different accelerating masses have been
+removed. Plot a graph of acceleration (y-axis) against gravitational force, $mg$ (x-axis). This should be a straight line through the origin. 
+
+
+
+<h2> Extension: </h2>
+By finding the gradient of the graph it is possible to get a value for the mass of the rider, $M$.
+$$ \text{gradient} = \frac{1}{(M + m)} $$
+
+Where $m$ is the total mass of the slotted masses <br>
+
+<br>
+
+
+<h1>Alternative Method:</h1>
+The acceleration of an object allowed to fall under the force of gravity is found by dropping a card vertically through a light gate
+<h2>Apparatus:</h2>
+<ul>	
+<li> Light gate & Interface </li> 
+<li>Clamp & Stand</li>
+<li>Card </li>
+<li>Ruler with ± 0.001 m resolution</li>
+</ul>
+<h2> Method</h2>
+
+Clamp the light gate about 20 cm above the bench. Clamp a ruler so that the vertical distance may be measured from above the level of the light gate. 
+<br>
+Cut black card to the precise length of 10.0 cm. Draw a pencil line across the width of the card at exactly half its length. 
+<br> 
+Measurements of the height fallen by the card should be made to this line rather than the lower or upper edge of the card. Adding two small blobs of Blutack, at the lower corners, will improve the stability of the card as it falls. 
+<br> 
+Configure the data-logging software to measure the transit time and calculate the velocity as the card passes through the light gate. A series of results is accumulated in a table. This should also include a column for the manual entry of distance measurements taken from the ruler. 
+<br>
+Plot a graph of height, $h$ (y-axis), against time squared, $t^{2}$ (xaxis),
+and calculate the value of $g$ using: $$g = 2 \times \text{gradient}$$.
+
+<h1>Further guidance</h1>
+
+Use appropriate analogue apparatus to record a range of measurements (to include length/distance, temperature, pressure, force, angles, volume) and to interpolate between scale markings.
+<ul>
+<li> Use calipers and micrometers for small distances, using digital or vernier scales.</li>
+<li> Use ICT such as computer modelling, or data logger with a variety of sensors to collect data, or use of software to process data.</li>
+</ul>
+<h1>Results</h1>
+Make sure you record your method and results clearly.
+
+<div class="sage">
+      <script type="text/x-sage">
+	  
+	  # some library objects we need
+from numpy import zeros, arange
+from matplotlib import pyplot as plt
+# number of results - needed for modelling the theoretical line
+n_results = 8
+# theoretical value for g - needed for modelling the theoretical line
+g = 9.81
+
+# compute the model predictions
+model = (0.5*g)*arange(n_results+1.0)
+
+# Enter your results as pairs of figures, add more brackets when you need to:
+results = (x,y ), (x,y ), (x,y )
+
+pl1 = list_plot(results,plotjoined=False,marker='+',legend_label='Results',axes_labels=['t^2', 'h'])
+pl2 = list_plot(model,plotjoined=True,linestyle='--',color='red',marker='x',legend_label='Model')
+
+show(pl1+pl2)
+      </script>
+     </div>
+
+<h1>Conclusions</h1>
+Compare your results to databook values, remember to state your uncertanties and quote your sources of information.
+        </div>
+
+        <div class="col-md-2">
+          <nav id="toc" data-toggle="toc" data-spy="affix"></nav>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+</html>

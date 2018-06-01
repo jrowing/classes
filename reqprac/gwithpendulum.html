@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>Physics at EMS</title>
+
+    <meta charset="utf-8">
+
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+      });
+    </script>
+    <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+    <script>sagecell.makeSagecell({"inputLocation": ".sage"});</script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.js"></script>
+
+    <style>
+      body {font-size: 200%; }
+      div.container { margin-top: 20px; margin-bottom: 100px; }
+      #main  h1 { margin-top: 50px; padding-top: 20px; border-top: 1px solid #cccccc; }
+      #main  h2 { margin-top: 40px; }
+      @media screen{ #main h1 { padding-top: 100px; } }
+      div.sage { padding-top: 20px; padding-bottom: 20px; font-size: 75%; }
+
+      nav[data-toggle='toc'] {
+      margin-top: 30px;
+      margin-left: 30px;
+      }
+    </style>
+
+  </head>
+  <body data-spy="scroll" data-target="#toc">
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <h1 data-toc-skip>Measurement of $g$ with a Pendulum</h1>
+      by Joe Rowing<br>
+      last updated 1/06/2018
+    </div>
+  </div>
+</nav>
+    <div class="container" id="main">
+      <div class="row" style="margin-top: 20px;">
+
+        <div class="col-md-9">
+         <h1> Theory:</h1>
+		 
+		 The period of oscillation of the pendulum is given by the equation: $$𝑇 = 2 \pi \sqrt{\frac{l}{g}}$$
+		 
+where:
+<ul>
+<li> $l$ is the length of the pendulum and </li> 
+<li> $g$ is the acceleration due to gravity.</li> 
+</ul>
+
+The equation can be written as:
+$$ T^{2} = \frac{4 \pi^{2}}{g} l $$
+
+which can be compared with the equation for a straight line $ y=mx+c$. <br>
+Thus a graph of $T^{2}$ against $l$ should be a straight line through the origin with the gradient of the line equal to $\frac{4 \pi^2}{g}$. 
+<br>
+The acceleration due to gravity can be determined from the value of the gradient and is equal to $\frac{4\pi^2}{\text{gradient}}$ . 
+		 
+
+	<h1> Apparatus:</h1>
+<ul>	
+<li>Stopwatch (± 0.01s)</li>
+<li>G-clamp to secure the stand</li>
+<li>Simple pendulum mass in the form of either a lead or brass bob</li>
+<li>Length of cord or thread – at least 1.0 m in length</li>
+<li>Stand, clamp and boss – the height of the stand should enable the length to be adjusted to at least 1.0 m</li>
+<li>Either a rubber or cork bung split in two so you can change length easily</li>
+<li>Meter rule (± 0.001m)</li>
+</ul>
+   
+
+<h1>Experimental Method:</h1>
+
+The apparatus should be set up as shown. <br>
+<img src="/classes/reqprac/Images/gbypendulum.JPG">
+<br>
+Adjust the length of the pendulum (measured from where the thread
+emerges from the cork/bung to the centre of the bob) by drawing the thread
+through the cork. The pendulum should be given a small displacement.
+The time for a number of oscillations (a minimum of 5) should be measured
+and the period of 1 oscillation determined. The oscillations can be
+determined by measuring against a fixed point. Repeat with different
+lengths at suitable intervals.  
+
+
+
+<h2> Extension: </h2>
+The height of the room can be determined by writing the equation as
+$$𝑇 = 2\pi \sqrt{{𝐻−ℎ}{g}}$$
+where $H$ is the height of the room and <br> 
+$h$ is the distance fromthe floor to the centre of the bob.<br>
+
+Note that displacement sensors could be used to obtain individual
+oscillations digitally <br>
+
+<br>
+
+
+<h1>Further guidance</h1>
+
+Use appropriate analogue apparatus to record a range of measurements (to include length/distance, temperature, pressure, force, angles, volume) and to interpolate between scale markings.
+<ul>
+<li> Use calipers and micrometers for small distances, using digital or vernier scales.</li>
+<li> Use ICT such as computer modelling, or data logger with a variety of sensors to collect data, or use of software to process data.</li>
+</ul>
+<h1>Results</h1>
+Make sure you record your method and results clearly.
+
+<div class="sage">
+      <script type="text/x-sage">
+	  
+	  # some library objects we need
+import math
+from numpy import zeros, arange
+from matplotlib import pyplot as plt
+# number of results - needed for modelling the theoretical line
+n_results = 8
+# theoretical value for g - needed for modelling the theoretical line
+g = 9.81
+con = 4*math.pi*math.pi # 4pi^2
+# compute the model predictions
+model = (con/g)*arange(n_results+1.0)
+
+# Enter your results as pairs of figures, add more brackets when you need to:
+results = (x,y ), (x,y ), (x,y )
+
+pl1 = list_plot(results,plotjoined=False,marker='+',legend_label='Results',axes_labels=['l', 'T^2'])
+pl2 = list_plot(model,plotjoined=True,linestyle='--',color='red',marker='x',legend_label='Model')
+
+show(pl1+pl2)
+      </script>
+     </div>
+
+<h1>Conclusions</h1>
+Compare your results to databook values, remember to state your uncertanties and quote your sources of information.
+        </div>
+
+        <div class="col-md-2">
+          <nav id="toc" data-toggle="toc" data-spy="affix"></nav>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+</html>

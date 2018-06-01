@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>Physics at EMS</title>
+
+    <meta charset="utf-8">
+
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+      });
+    </script>
+    <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+    <script>sagecell.makeSagecell({"inputLocation": ".sage"});</script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.js"></script>
+
+    <style>
+      body {font-size: 200%; }
+      div.container { margin-top: 20px; margin-bottom: 100px; }
+      #main  h1 { margin-top: 50px; padding-top: 20px; border-top: 1px solid #cccccc; }
+      #main  h2 { margin-top: 40px; }
+      @media screen{ #main h1 { padding-top: 100px; } }
+      div.sage { padding-top: 20px; padding-bottom: 20px; font-size: 75%; }
+
+      nav[data-toggle='toc'] {
+      margin-top: 30px;
+      margin-left: 30px;
+      }
+    </style>
+
+  </head>
+  <body data-spy="scroll" data-target="#toc">
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <h1 data-toc-skip>Determination of Unknown Masses by Using the Principle of Moments</h1>
+      by Joe Rowing<br>
+      last updated 22/05/2018
+    </div>
+  </div>
+</nav>
+    <div class="container" id="main">
+      <div class="row" style="margin-top: 20px;">
+
+        <div class="col-md-9">
+         <h1> Theory:</h1>
+		 The centre of gravity of a body is a point through which the weight of the body acts, or
+appears to act. A metre rule has a uniform shape and a constant density and so the centre of
+gravity will be a point exactly in the middle of the rule (at the 50 cm mark).<br>
+The principle of moments states that an object is in equilibrium if the sum of all anticlockwise moments about the pivot is equal to the sum of all clockwise moments about the same pivot.<br>
+If a metre rule is balanced horizontally at any point, this means that the clockwise moments and the anticlockwise moments must be equal.
+ 
+
+		 <h2>Apparatus</h2>
+<ul>
+<li>Metre rule</li>
+<li>Clamp and stand</li>
+<li>Nail or other pivot</li>
+<li>200g mass</li>
+<li>Mystery mass and hanger</li>
+<li>Loops of thread</li>
+</ul>
+
+
+
+<h1>Experimental Method:</h1>
+
+Set up the equipment as below:
+
+<img src="/classes/reqprac/Images/momentsprac.JPG">
+<br>
+
+Hang the known mass from the metre rule and adjust it until the ruler
+is horizontal. 
+Note down the distance, x, of the mass from the pivot. The mass (or weight)
+of the metre rule can now be calculated using the principle of moments:
+$$ 0.20 \times \text{metre rule weight} = x \times 1.96$$
+Now remove the $200$g mass and replace it with the unknown weight, $W$,
+and again adjust the position of the weight until the ruler balances.<br> Measure
+the distance, $d$, of the unknown weight from the pivot. The unknown weight
+can again be calculated by applying the principle of moments:
+$$0.20 \times \text{metre rule weight} = d \times \text{unknown weight} $$
+The unknown weight can be converted into a mass (in kilograms) by
+dividing by 9.81. This can then be checked using a top pan balance.
+
+<h1>Extension:</h1>
+
+You should use this investigation to practice calculating uncertainties and combining percentage uncertainties. It can be further extended to include equilibrium of forces.
+
+        </div>
+
+        <div class="col-md-2">
+          <nav id="toc" data-toggle="toc" data-spy="affix"></nav>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+</html>
