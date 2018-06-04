@@ -123,6 +123,30 @@ Use appropriate analogue apparatus to record a range of measurements (to include
 <h1>Results</h1>
 Make sure you record your method and results clearly.
 
+<div class="sage">
+      <script type="text/x-sage">
+	  
+	  # some library objects we need
+import math
+from numpy import zeros, arange
+from matplotlib import pyplot as plt
+# number of results - needed for modelling the theoretical line
+n_results = 8
+# theoretical value for g - needed for modelling the theoretical line
+g = 9.81
+con = 4*math.pi*math.pi # 4pi^2
+# compute the model predictions
+model = (con/g)*arange(n_results+1.0)
+
+# Enter your results as pairs of figures, add more brackets when you need to:
+results = (x,y ), (x,y ), (x,y )
+
+pl1 = list_plot(results,plotjoined=False,marker='+',legend_label='Results',axes_labels=['t', 'Amplitude'])
+pl2 = list_plot(model,plotjoined=True,linestyle='--',color='red',marker='x',legend_label='Model')
+
+show(pl1+pl2)
+      </script>
+     </div>
 
 <h1>Conclusions</h1>
 Compare your results to databook values, remember to state your uncertanties and quote your sources of information.
