@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>Physics at EMS</title>
+
+    <meta charset="utf-8">
+
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+      });
+    </script>
+    <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+    <script>sagecell.makeSagecell({"inputLocation": ".sage"});</script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.js"></script>
+
+    <style>
+      body {font-size: 200%; }
+      div.container { margin-top: 20px; margin-bottom: 100px; }
+      #main  h1 { margin-top: 50px; padding-top: 20px; border-top: 1px solid #cccccc; }
+      #main  h2 { margin-top: 40px; }
+      @media screen{ #main h1 { padding-top: 100px; } }
+      div.sage { padding-top: 20px; padding-bottom: 20px; font-size: 75%; }
+
+      nav[data-toggle='toc'] {
+      margin-top: 30px;
+      margin-left: 30px;
+      }
+    </style>
+
+  </head>
+  <body data-spy="scroll" data-target="#toc">
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <h1 data-toc-skip>Determination of the Speed of Sound Using Stationary Waves </h1>
+      by Joe Rowing<br>
+      last updated 1/06/2018
+    </div>
+  </div>
+</nav>
+    <div class="container" id="main">
+      <div class="row" style="margin-top: 20px;">
+
+        <div class="col-md-9">
+         <h1> Theory:</h1>
+		 
+	When resonance first occurs, the length of air in the tube, $l$, plus a small end correction, $e$ (to account for the position of the tuning fork or speaker above the tube) will be equal to a quarter of a wavelength. Hence:
+
+	$$ l+ e = \frac{\lambda}{4} \text { and } \lambda = \frac{c}{f}$$
+	So
+	$$l = \frac{c}{4f-e}$$
+	
+	
+If a graph is plotted of $l$ (y-axis) against $1/f$ (x-axis) it should be a straight line with a small negative y-intercept.
+The gradient of the graph equals $c/4$ , and so the speed of sound, c, can be found. The small negative intercept will give the end correction.
+
+	<h1> Apparatus:</h1>
+<ul>	
+<li>Speaker</li>
+<li>Signal generator</li>
+<li>Resonance tube</li>
+<li>Water</li>
+</ul>
+   
+
+<h1>Experimental Method:</h1>
+
+The apparatus should be set up as shown. <br>
+<img src="/classes/reqprac/Images/.JPG">
+<br>
+Initially fill the resonance tube to the top with water. Slowly allow the water to drain. As this is being done hold the speaker over the
+top. When resonance occurs (a loud sound will be heard), measure the
+length of the tube above the water level.
+Repeat the above for a range of frequencies. Plot a graph of length (y-axis)
+against 1/frequency (x-axis). Use the gradient to determine a value for the
+speed of sound.
+
+<h2>Extension</h2>
+The resonance tube could be raised past the first resonance point until the second resonance point is reached.
+The results could then be used to show that for the two resonant lengths $l_{1}$ and $l_{2}$ then:
+$$\text{Speed of sound, }c = 2f(l_{2} – l_{1})$$
+
+
+<h1>Results</h1>
+Make sure you record your method and results clearly.
+
+<div class="sage">
+      <script type="text/x-sage">
+	  
+	  # some library objects we need
+import math
+from numpy import zeros, arange
+from matplotlib import pyplot as plt
+# number of results - needed for modelling the theoretical line
+n_results = 8
+# theoretical value for g - needed for modelling the theoretical line
+g = 9.81
+con = 4*math.pi*math.pi # 4pi^2
+# compute the model predictions
+model = (con/g)*arange(n_results+1.0)
+
+# Enter your results as pairs of figures, add more brackets when you need to:
+results = (x,y ), (x,y ), (x,y )
+
+pl1 = list_plot(results,plotjoined=False,marker='+',legend_label='Results',axes_labels=['t', 'Amplitude'])
+pl2 = list_plot(model,plotjoined=True,linestyle='--',color='red',marker='x',legend_label='Model')
+
+show(pl1+pl2)
+      </script>
+     </div>
+
+<h1>Conclusions</h1>
+Compare your results to databook values, remember to state your uncertanties and quote your sources of information.
+        </div>
+
+        <div class="col-md-2">
+          <nav id="toc" data-toggle="toc" data-spy="affix"></nav>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+</html>

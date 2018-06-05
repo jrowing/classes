@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>Physics at EMS</title>
+
+    <meta charset="utf-8">
+
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+      });
+    </script>
+    <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+    <script>sagecell.makeSagecell({"inputLocation": ".sage"});</script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.js"></script>
+
+    <style>
+      body {font-size: 200%; }
+      div.container { margin-top: 20px; margin-bottom: 100px; }
+      #main  h1 { margin-top: 50px; padding-top: 20px; border-top: 1px solid #cccccc; }
+      #main  h2 { margin-top: 40px; }
+      @media screen{ #main h1 { padding-top: 100px; } }
+      div.sage { padding-top: 20px; padding-bottom: 20px; font-size: 75%; }
+
+      nav[data-toggle='toc'] {
+      margin-top: 30px;
+      margin-left: 30px;
+      }
+    </style>
+
+  </head>
+  <body data-spy="scroll" data-target="#toc">
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <h1 data-toc-skip>Investigation of the Force–Extension Relationship for Rubber
+</h1>
+      by Joe Rowing<br>
+      last updated 1/06/2018
+    </div>
+  </div>
+</nav>
+    <div class="container" id="main">
+      <div class="row" style="margin-top: 20px;">
+
+        <div class="col-md-9">
+         <h1> Theory:</h1>
+		 
+	Rubber – an example of a polymer with weak cross bonds. Natural rubber is a polymer of the molecule
+isoprene. It has weak van der Waals cross bonds and only a few covalent (strong) cross bonds.
+
+	<h1> Apparatus:</h1>
+<ul>	
+<li>Clamp and stand </li>
+<li>G-clamp to secure (if required)</li>
+<li>Metre rule (resolution ± 0.001 m) </li>
+<li>Micrometer (resolution ± 0.01 mm)</li>
+<li>Optical pin (for use as a pointer if required) </li>
+<li>50 g mass holder plus a number of 50 g masses</li>
+<li>Rubber band of cross-section approximately 1 mm by 2 mm</li>
+</ul>
+   
+
+<h1>Experimental Method:</h1>
+Hang a (cut) rubber band of (approximate) cross-section 1 mm by 2 mm vertically from a stand, boss and clamp.
+The base of the stand should be secured using a G-clamp. Hang a 50 gram mass holder from the band. Place a
+metre rule as close as possible to the mass holder. The length can be read using an optical pin attached to the
+base of the mass holder.
+Measure the length, width and thickness of the rubber when it is supporting the 50 gram holder. Try to avoid
+squashing the rubber with the micrometer screw gauge.
+Increase the mass in 50 gram steps, measuring the extension each time. Continue until the band breaks.
+Plot the force–extension curve and determine the Young modulus from the linear section
+
+
+<h1>Extension</h1>
+A similar experiment could be carried out on polyethene and a comparison of the two curves made. Another
+investigation could be made comparing the properties of the plastic shopping bags from various supermarkets.
+Measurements could be taken when unloading both the rubber band and the polyethene and the hysteresis
+determined.
+<br>
+
+
+<h1>Results</h1>
+Make sure you record your method and results clearly.
+
+<div class="sage">
+      <script type="text/x-sage">
+	  
+	  # some library objects we need
+import math
+from numpy import zeros, arange
+from matplotlib import pyplot as plt
+# number of results - needed for modelling the theoretical line
+n_results = 8
+# theoretical value for g - needed for modelling the theoretical line
+g = 9.81
+con = 4*math.pi*math.pi # 4pi^2
+# compute the model predictions
+model = (con/g)*arange(n_results+1.0)
+
+# Enter your results as pairs of figures, add more brackets when you need to:
+results = (x,y ), (x,y ), (x,y )
+
+pl1 = list_plot(results,plotjoined=False,marker='+',legend_label='Results',axes_labels=['t', 'Amplitude'])
+pl2 = list_plot(model,plotjoined=True,linestyle='--',color='red',marker='x',legend_label='Model')
+
+show(pl1+pl2)
+      </script>
+     </div>
+
+<h1>Conclusions</h1>
+Compare your results to databook values, remember to state your uncertanties and quote your sources of information.
+        </div>
+
+        <div class="col-md-2">
+          <nav id="toc" data-toggle="toc" data-spy="affix"></nav>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>Physics at EMS</title>
+
+    <meta charset="utf-8">
+
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+      });
+    </script>
+    <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+    <script>sagecell.makeSagecell({"inputLocation": ".sage"});</script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.js"></script>
+
+    <style>
+      body {font-size: 200%; }
+      div.container { margin-top: 20px; margin-bottom: 100px; }
+      #main  h1 { margin-top: 50px; padding-top: 20px; border-top: 1px solid #cccccc; }
+      #main  h2 { margin-top: 40px; }
+      @media screen{ #main h1 { padding-top: 100px; } }
+      div.sage { padding-top: 20px; padding-bottom: 20px; font-size: 75%; }
+
+      nav[data-toggle='toc'] {
+      margin-top: 30px;
+      margin-left: 30px;
+      }
+    </style>
+
+  </head>
+  <body data-spy="scroll" data-target="#toc">
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <h1 data-toc-skip>Investigation of the Force on a Current in a Magnetic Field </h1>
+      by Joe Rowing<br>
+      last updated 1/06/2018
+    </div>
+  </div>
+</nav>
+    <div class="container" id="main">
+      <div class="row" style="margin-top: 20px;">
+
+        <div class="col-md-9">
+         <h1> Theory:</h1>
+		 
+	The force on a current carrying wire in a magnetic field is described by the relationship: $$F= BIl \sin \theta.$$ In this
+practical arrangement, the value of $\theta$ is ninety degrees, so the equation can be simplified to $F=BIl$. <br>
+The value of F is determined by the weight of the magnet placed on a balance. In effect $F= \Delta mg$ where $\Delta m$ is the apparent
+change in mass as $F$ varies due to the magnitude of the current. The current can be varied and a graph of $F$
+against $I$ can be plotted which should be linear. <br>
+
+The length of the wire can be measured and the magnetic flux
+density of the magnet can be determined from the gradient of the graph and the value of length of wire within
+the pole pieces of the magnet.
+
+	<h1> Apparatus:</h1>
+<ul>	
+<li>Ammeter</li>
+<li>Electronic scales with resolution ± 0.001g</li>
+<li>Stand and clamp </li>
+<li>U-shaped soft iron section with ceramic pole pieces</li>
+<li>Variable D.C. power supply </li>
+<li>Ammeter or mutlimeter set to A range ± 0.01 A</li>
+<li>Metre rule </li>
+<li>20 SWG copper wire</li>
+<li>Rheostat – value can be chosen so that the current can be varied in the range 0 to 3.00 A or 5.00 A 
+</ul>
+   
+
+<h1>Experimental Method:</h1>
+The apparatus should be set up as shown. <br>
+<img src="/classes/reqprac/Images/fbil.PNG">
+<br>
+Set up the apparatus as shown in the diagram. Measure the length, $l$ of the
+wire which is between the poles of the magnet. Use the rheostat to increase
+the current in steps from zero. For each chosen current value, record $ \Delta m$, the apparent change in mass of the magnet (this can be an increase or decrease, depending upon the orientation of the current and the magnetic field). The force, $F$ on the wire is calculated from $F = \Delta mg$ for each value of
+current $I$. A graph of $F$ (y-axis) against $I$ (x-axis) should be a straight line through the origin. The magnetic flux density, $B$ of the magnet can be
+determined from $$B= \frac{\text{gradient}}{\text{length of wire}} $$
+
+
+<h1>Results</h1>
+Make sure you record your method and results clearly.
+
+<div class="sage">
+      <script type="text/x-sage">
+	  
+	  # some library objects we need
+import math
+from numpy import zeros, arange
+from matplotlib import pyplot as plt
+# number of results - needed for modelling the theoretical line
+n_results = 8
+# theoretical value for g - needed for modelling the theoretical line
+g = 9.81
+con = 4*math.pi*math.pi # 4pi^2
+# compute the model predictions
+model = (con/g)*arange(n_results+1.0)
+
+# Enter your results as pairs of figures, add more brackets when you need to:
+results = (x,y ), (x,y ), (x,y )
+
+pl1 = list_plot(results,plotjoined=False,marker='+',legend_label='Results',axes_labels=['t', 'Amplitude'])
+pl2 = list_plot(model,plotjoined=True,linestyle='--',color='red',marker='x',legend_label='Model')
+
+show(pl1+pl2)
+      </script>
+     </div>
+
+<h1>Conclusions</h1>
+Compare your results to databook values, remember to state your uncertanties and quote your sources of information.
+        </div>
+
+        <div class="col-md-2">
+          <nav id="toc" data-toggle="toc" data-spy="affix"></nav>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+</html>

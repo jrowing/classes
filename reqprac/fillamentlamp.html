@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>Physics at EMS</title>
+
+    <meta charset="utf-8">
+
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+      });
+    </script>
+    <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+    <script>sagecell.makeSagecell({"inputLocation": ".sage"});</script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.js"></script>
+
+    <style>
+      body {font-size: 200%; }
+      div.container { margin-top: 20px; margin-bottom: 100px; }
+      #main  h1 { margin-top: 50px; padding-top: 20px; border-top: 1px solid #cccccc; }
+      #main  h2 { margin-top: 40px; }
+      @media screen{ #main h1 { padding-top: 100px; } }
+      div.sage { padding-top: 20px; padding-bottom: 20px; font-size: 75%; }
+
+      nav[data-toggle='toc'] {
+      margin-top: 30px;
+      margin-left: 30px;
+      }
+    </style>
+
+  </head>
+  <body data-spy="scroll" data-target="#toc">
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <h1 data-toc-skip>Determination of the Resistivity of a Metal Wire</h1>
+      by Joe Rowing<br>
+      last updated 1/06/2018
+    </div>
+  </div>
+</nav>
+    <div class="container" id="main">
+      <div class="row" style="margin-top: 20px;">
+
+        <div class="col-md-9">
+         <h1> Theory:</h1>
+		 
+		 Ohm’s law states that for a conductor the current, $I$, is directly proportional to the potential difference, $V$,
+provided physical factors such as temperature and pressure remain constant. Therefore by plotting the $I–V$
+characteristic of a metal wire and of a filament lamp, the validity of Ohm's law, as applicable to each of these
+components, can be determined. <br>
+A graph of $I$ against $V$ is linear for a metal wire and non-linear for a filament of a lamp. 
+
+	<h1> Apparatus:</h1>
+<ul>	
+<li>Powersupply</li>
+<li>Ammeter</li>
+<li>Micrometer +/- 0.01mm</li>
+<li>Bulb</li>
+<li>Resistor</li>
+<li>Voltmeter</li>
+</ul>
+   
+
+<h1>Experimental Method:</h1>
+The apparatus should be set up as shown. <br>
+<img src="/classes/reqprac/Images/ohm.PNG">
+<br>
+Starting with the output of the variable D.C. voltage supply set to its
+minimum value, slowly increase the value of the applied voltage. The
+current through the component and the potential difference across the
+component should be recorded for a range of values of the applied voltage.
+A graph of current against voltage should then be plotted. This procedure
+can be repeated for different components. 
+
+
+<h1>Extension</h1>
+Starting with the output of the variable D.C. voltage supply set to its
+minimum value, slowly increase the value of the applied voltage. The
+current through the component and the potential difference across the
+component should be recorded for a range of values of the applied voltage.
+A graph of current against voltage should then be plotted. This procedure
+can be repeated for different components. 
+<br>
+
+
+<h1>Results</h1>
+Make sure you record your method and results clearly.
+
+<div class="sage">
+      <script type="text/x-sage">
+	  
+	  # some library objects we need
+import math
+from numpy import zeros, arange
+from matplotlib import pyplot as plt
+# number of results - needed for modelling the theoretical line
+n_results = 8
+# theoretical value for g - needed for modelling the theoretical line
+g = 9.81
+con = 4*math.pi*math.pi # 4pi^2
+# compute the model predictions
+model = (con/g)*arange(n_results+1.0)
+
+# Enter your results as pairs of figures, add more brackets when you need to:
+results = (x,y ), (x,y ), (x,y )
+
+pl1 = list_plot(results,plotjoined=False,marker='+',legend_label='Results',axes_labels=['t', 'Amplitude'])
+pl2 = list_plot(model,plotjoined=True,linestyle='--',color='red',marker='x',legend_label='Model')
+
+show(pl1+pl2)
+      </script>
+     </div>
+
+<h1>Conclusions</h1>
+Compare your results to databook values, remember to state your uncertanties and quote your sources of information.
+        </div>
+
+        <div class="col-md-2">
+          <nav id="toc" data-toggle="toc" data-spy="affix"></nav>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+</html>
