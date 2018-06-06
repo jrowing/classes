@@ -26,11 +26,13 @@ You should be able to:
 You should be able to:
 
 *assess the risks of your experiment; 
----
+
+|-| - | - |
 | Hazard | Risk | Control Measure |
----
+|-| - | - |
 | an object or chemical and the nature of the hazard | an object or chemical and the nature of the hazard | must be practicable in the context of the practical |
----
+|-| - | - |
+
 * describe precautions that should be taken to keep risks to a minimum.
 
 ## Recording readings and significant figures
@@ -42,7 +44,7 @@ Processed data should be given to the same number of significant figures as raw 
 You should be able to:
 You should be able to:
 * rearrange expressions into the form \(𝑦 = 𝑚𝑥 + 𝑐\);
-* plot a graph of y against x and use the graph to find constants m and c in an equation in the form \(𝑦 = 𝑚𝑥 + 𝑐\).
+* plot a graph of y against x and use the graph to find constants m and c in an equation in the form $ 𝑦 = 𝑚𝑥 + 𝑐 $.
 * rearrange expressions into the forms: \(y = ax^{n} \) and \(y = ae^{kx};
  plot a graph of log y against log x and use the graph to find the constants a and n in an
 equation in the form 𝑦 = 𝑎𝑥
