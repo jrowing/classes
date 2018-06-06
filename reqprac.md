@@ -20,3 +20,14 @@ You should be able to:
 * take repeat readings where appropriate;
 * make and record accurate measurements;
 * evaluate experimental methods and suggest improvements.
+
+## Safety Considerations
+
+You should be able to:
+
+*assess the risks of your experiment; 
+---
+| Hazard | Risk | Control Measure |
+---
+|  |  |  |
+---
