@@ -141,98 +141,57 @@ You should be able to:
 
 <h1>Graphs</h1>
 You should be able to:
- include a title and axes which are labelled with scales and units;
- make sure the scales are convenient to use, so that readings may easily be taken from
-the graph – avoid scales which use factors of 3 – and that the plotted points occupy at
-least half of both the vertical and horizontal extent of the graph grid;
- first consider carefully whether your plotted points suggest a straight line or a curve -
-then draw in your best fit line either with the aid of a ruler or (if a curve) by a freehand
-sketch;
- when extracting data from a graph, use the best-fit line rather than the original data;
- when determining the gradient of a graph, show clearly on your graph the readings you
-use. This is most conveniently done by drawing a right angled triangle – this should be
-large so that accuracy is preserved.
-
+<ul>
+<li> include a title and axes which are labelled with scales and units;</li>
+<li> make sure the scales are convenient to use, so that readings may easily be taken from the graph – avoid scales which use factors of 3 – and that the plotted points occupy at least half of both the vertical and horizontal extent of the graph grid;</li>
+<li>first consider carefully whether your plotted points suggest a straight line or a curve - then draw in your best fit line either with the aid of a ruler or (if a curve) by a freehand sketch;</li>
+<li> when extracting data from a graph, use the best-fit line rather than the original data;</li>
+<li> when determining the gradient of a graph, show clearly on your graph the readings you use. This is most conveniently done by drawing a right angled triangle – this should be large so that accuracy is preserved.</li>
+</ul>
 <h2>The following remarks apply to linear graphs.</h2>
 
-<h3>Error bars</h3>
-The points should be plotted with error bars. These should be centred on the plotted point and
-have a total length equal to ymax  ymin, for uncertainties in the y values of the points, and
-xmax – xmin, for uncertainties in the x values of the points. If identical results are obtained the
-precision of the instrument could be used. If the error bars are too small to plot this should be
-stated. This will almost certainly be the case for log graphs.
-Maximum and minimum gradients
-If calculating a quantity such as the gradient or the intercept a line of maximum gradient and a
-line of minimum gradient should be drawn which are consistent with the error bars. It is often
-convenient to plot the centroid of the points to help this process. This is the point,( 𝑥, 𝑦) the
-mean x value against the mean y value. The line of maximum gradient and the line of minimum
-gradient should both pass through this point.
-Values for the maximum and minimum gradients, mmax and mmin, [or intercepts, cmax and cmin]
-can now be found and the results quoted as:
-gradient =
-𝑚max + 𝑚min
-2
-±
-𝑚max − 𝑚min
-2
-intercept =
-𝑐max + 𝑐min
-2
-±
-𝑐max − 𝑐min
-2
+<h2>Error bars</h2>
 
-<h3>The following remarks apply to curved graphs.</h3>
-If the graph is curved error bars should still be plotted (on both axes if possible) and a curve of
-best fit drawn to enable a tangent to be constructed if the gradient of any point is needed. 
+The points should be plotted with error bars. These should be centred on the plotted point and have a total length equal to $y_{max} - y_{min}$, for uncertainties in the $y$ values of the points, and $x_{max} – x_{min}$, for uncertainties in the $x$ values of the points. If identical results are obtained the precision of the instrument could be used. If the error bars are too small to plot this should be stated. This will almost certainly be the case for log graphs.
+
+<h2> Maximum and minimum gradients </h2>
+If calculating a quantity such as the gradient or the intercept a line of maximum gradient and a line of minimum gradient should be drawn which are consistent with the error bars. It is often convenient to plot the centroid of the points to help this process. This is the point,$(\bar{x} ,\bar{y})$ the mean $x$ value against the mean $y$ value. The line of maximum gradient and the line of minimum gradient should both pass through this point.
+Values for the maximum and minimum gradients, $m_{max}$ and $m_{min}$, [or intercepts, $c_{max}$ and $c_{min}$]
+can now be found and the results quoted as:
+$$\text{gradient} = \frac{m_{max} + m_{min}}{2} \pm \frac{m_{max} - m_{min}}{2} $$
+$$\text{intercept} = \frac{c_{max}+ c_{min}}{2} \pm \frac{c_{max} - c_{min}}{2} $$
+
+<h2>The following remarks apply to curved graphs.</h2>
+If the graph is curved error bars should still be plotted (on both axes if possible) and a curve of best fit drawn to enable a tangent to be constructed if the gradient of any point is needed. 
 
 
 <h1>Estimating uncertainties</h1>
 You should be able to:
-1. Express uncertainties
-Use the form x ± u, where x is the quantity being measured and u its estimated
-uncertainty.
-2. Estimate uncertainties using the resolution of an instrument
-If a single reading is taken and there is no reason to believe that the uncertainty is
-greater, take the uncertainty to be the instrument resolution.
-3. Estimate uncertainties using the spread of readings
-Take the best estimate of the quantity you are determining as the mean of your
-readings and the estimated uncertainty to be half the spread in the readings,
-discounting any suspect readings: i.e. 𝑢 =
-𝑥max−𝑥min
-2
-4. Percentage uncertainties
-The percentage uncertainty, p, is calculated from:
-Uncertainties in calculated quantities
-1. If a quantity is calculated by multiplying and/or dividing two or more other quantities,
-each of which has its own uncertainty, the percentage uncertainty in the result is found by
-adding the percentage uncertainties in the quantities from which it is derived.
-e.g. If  is calculated using 𝜆 =
-𝑎𝑦
-𝐷
-, the percentage uncertainty in  is:
-p = pa + py + pD
-2. If a quantity is calculated by multiplying by a constant, the percentage uncertainty is
-unchanged.
-3. If a quantity is raised to a power, e.g. x
-2
-, x
-3
-or √𝑥 , the percentage uncertainty is
-multiplied by the same power.
-Example of 2 and 3: The energy, E, stored in a stretched spring is given by
-E = ½ kx2
-. Both k and x have uncertainties, but 1
-2
-has no uncertainty.
-So: pE = pk + 2px
+<ul>
+<li>Express uncertainties - Use the form $x \pm u$, where $x$ is the quantity being measured and $u$ its estimated uncertainty.</li>
+<li> Estimate uncertainties using the resolution of an instrument -
+If a single reading is taken and there is no reason to believe that the uncertainty is greater, take the uncertainty to be the instrument resolution.</li>
+<li>Estimate uncertainties using the spread of readings - Take the best estimate of the quantity you are determining as the mean of your readings and the estimated uncertainty to be half the spread in the readings,
+discounting any suspect readings: i.e. $ u = \frac{x_{max} - x_{min}}{2}$</li>
+<li>Percentage uncertainties - The percentage uncertainty, $p$, is calculated from: $$ p = \frac{\text{estimated uncertainty}}{\text{mean value}} \times 100 \%$$
+</li>
+</ul>
+
+<h2>Uncertainties in calculated quantities</h2>
+<ul>
+<li>If a quantity is calculated by multiplying and/or dividing two or more other quantities, each of which has its own uncertainty, the percentage uncertainty in the result is found by adding the percentage uncertainties in the quantities from which it is derived. e.g. If $\lambda$ is calculated using $\lambda = \frac{ay}{D}$, the percentage uncertainty in $\lambda$ is:
+$$ p_{\lambda} = p_{a} + p_{y} + p_{D} $$ </li>
+<li> If a quantity is calculated by multiplying by a constant, the percentage uncertainty is unchanged.</li>
+<li>If a quantity is raised to a power, e.g. $x^2$, $x^3$ or $\sqrt{x}$, the percentage uncertainty is multiplied by the same power.
+Example: The energy, $E$, stored in a stretched spring is given by $ E = 1/2 kx^{2} $. Both $k$ and $x$ have uncertainties, but $1/2$ has no uncertainty. So: $$p_{E} = p_{k} + 2p_{x}$$
+</li>
+</ul>
+
 <h1>Conclusions and evaluations</h1>
 You should be able to:
- draw conclusions from an experiment, including determining the values of constants,
-considering whether experimental data supports a given hypothesis, and making
-predictions;
- suggest modifications to the experimental arrangement that will improve the accuracy
-of the experiment or to extend the investigation to answer a new question.
+<ul>
+<li>draw conclusions from an experiment, including determining the values of constants, considering whether experimental data supports a given hypothesis, and making predictions;</li>
+<li> suggest modifications to the experimental arrangement that will improve the accuracy of the experiment or to extend the investigation to answer a new question.</li>
 
 
         </div>
