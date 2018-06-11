@@ -1,1 +1,123 @@
-hello
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>Physics at EMS</title>
+
+    <meta charset="utf-8">
+
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+      });
+    </script>
+    <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+    <script>sagecell.makeSagecell({"inputLocation": ".sage"});</script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.js"></script>
+
+    <style>
+      body {font-size: 200%; }
+      div.container { margin-top: 20px; margin-bottom: 100px; }
+      #main  h1 { margin-top: 50px; padding-top: 20px; border-top: 1px solid #cccccc; }
+      #main  h2 { margin-top: 40px; }
+      @media screen{ #main h1 { padding-top: 100px; } }
+      div.sage { padding-top: 20px; padding-bottom: 20px; font-size: 75%; }
+
+      nav[data-toggle='toc'] {
+      margin-top: 30px;
+      margin-left: 30px;
+      }
+    </style>
+
+  </head>
+  <body data-spy="scroll" data-target="#toc">
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <h1 data-toc-skip>Waves Basics</h1>
+      by Joe Rowing<br>
+      last updated 8/27/2017
+    </div>
+  </div>
+</nav>
+    <div class="container" id="main">
+      <div class="row" style="margin-top: 20px;">
+
+        <div class="col-md-9">
+         <h1> Theory:</h1>
+		 <iframe scrolling="no" title="" src="https://www.geogebra.org/material/iframe/id/SxNZa3Q2/width/1174/height/591/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1174px" height="591px" style="border:0px;"> </iframe>
+		 <h1>Apparatus:</h1>
+	     <h2>Model equation</h2>
+     The equation of the theoretical curve is:
+	 <h1>Simulation</h1>
+	     <div class="sage">
+      <script type="text/x-sage">
+     @interact
+     def _(n=(1,20))
+     
+     print(factorial(n))
+      </script>
+     </div>
+
+     <h1>Your results</h1>
+
+          <div class="sage">
+      <script type="text/x-sage"># some library objects we need
+from numpy.random import binomial, seed
+from numpy import zeros, arange
+from matplotlib import pyplot as plt
+# initial population - needed for modelling the theoretical line
+P0 = 80
+
+# number of rolls in your experiment - needed for modelling the theoretical line
+n_rolls =
+
+# Probability of decay - needed for modelling the theoretical line
+
+p= 1/6
+
+
+# compute the model predictions
+model = (1.0-p)**arange(n_rolls+1.0)*P0
+
+# Enter your results as pairs of figures, add more brackets when you need to:
+
+results = (1, y), (2, y), (3, y), (4, y), (5, y), (6, y), (7, y), (8, y), (9, y), (10, y), (11, y), (12, y)
+
+pl1 = list_plot(results,plotjoined=True,marker='+',legend_label='averaged',axes_labels=['roll #', '# dice'])
+pl2 = list_plot(model,plotjoined=True,linestyle='--',color='red',marker='x',legend_label='model')
+
+show(pl1+pl2)
+      </script>
+     </div>
+
+
+     <h1>Conclusions</h1>
+
+        </div>
+
+        <div class="col-md-2">
+          <nav id="toc" data-toggle="toc" data-spy="affix"></nav>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+</html>
