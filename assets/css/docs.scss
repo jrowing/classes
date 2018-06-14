@@ -139,42 +139,6 @@ a {
   border: 2px solid #ccf4ff;
 }
 
-.month-menuitem.active {
-  background: #ccf4ff;
-  color: #000;
-}
-
-a {
-  color: #333333;
-  text-decoration: none;
-  padding-bottom: 0px;
-  border-bottom: 2px #CCF4FF solid;
-}
-
-a:hover {
-  color: #47CCFC;
-}
-
-td {
-  width: 160px;
-  vertical-align: top;
-}
-
-.header td {
-  padding: 10px;
-  border-bottom: 1px solid #e0e0e0;
-}
-
-.days td {
-  padding-top: 2px;
-  height: 100px;
-  border-bottom: 1px solid #f0f0f0;
-}
-
-.days:last-child td {
-  border-bottom: 0;
-}
-
 .empty {
   background: repeating-linear-gradient(0, #eee 0, #eee 1px, white 1px, white 5px);
   background-size: 1px 5px;
