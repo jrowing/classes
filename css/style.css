@@ -18,8 +18,8 @@ h1 { font-size: 40px; border-bottom: 1px solid #999; display: inline-block; }
 h2 { font-size: 30px; }
 
 .month-menuitem {
-  font-size: 14px;
-  padding: 6px;
+  font-size: 10px;
+  padding: 8px;
   display: inline-block;
   border: 0;
   text-transform: uppercase;
