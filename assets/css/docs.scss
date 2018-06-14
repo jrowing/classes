@@ -122,64 +122,6 @@ a {
 	color: $content-color;
 	line-height: 1.7;
 	word-wrap: break-word;
-}
-
-.inner {
-  width: 100%;
-	max-width: $content-width;
-	padding: $base-height ($base-height * 2) ($base-height * 3) $base-height;
-}
-
-.section {
-	margin-bottom: $base-height;
-}
-
-/**
-* Mobile
-*/
-@media (max-width: $mobile-width) {
-	.wrapper {
-		flex-direction: column;
-	}
-
-	.sidebar {
-		width: 100%;
-		max-width: 100%;
-		border-right: none;
-		height: $header-height;
-
-		.sidebar-mobile {
-			display: block;
-
-			.menu-icon {
-				display: inline;
-			}
-		}
-
-		&.opened {
-			overflow: visible;
-			height: auto;
-			border-bottom: $sidebar-border;
-
-			.sidebar-mobile {
-				background: $navigation-background;
-			}
-		}
-	}
-
-	.content {
-		width: 100%;
-		margin-top: 0;
-		height: calc(100% - #{$header-height});
-		min-height: calc(100% - #{$header-height});
-	}
-
-	.inner {
-		padding: $base-height;
-	}
-}
-
-
 .month-table {
   margin: 0 auto 100px;
   border: 1px solid #ccefff;
@@ -301,3 +243,61 @@ td {
 .multi-days a:hover { color: #000; }
 
 .no-event { color: #aaa; }
+
+}
+
+.inner {
+  width: 100%;
+	max-width: $content-width;
+	padding: $base-height ($base-height * 2) ($base-height * 3) $base-height;
+}
+
+.section {
+	margin-bottom: $base-height;
+}
+
+/**
+* Mobile
+*/
+@media (max-width: $mobile-width) {
+	.wrapper {
+		flex-direction: column;
+	}
+
+	.sidebar {
+		width: 100%;
+		max-width: 100%;
+		border-right: none;
+		height: $header-height;
+
+		.sidebar-mobile {
+			display: block;
+
+			.menu-icon {
+				display: inline;
+			}
+		}
+
+		&.opened {
+			overflow: visible;
+			height: auto;
+			border-bottom: $sidebar-border;
+
+			.sidebar-mobile {
+				background: $navigation-background;
+			}
+		}
+	}
+
+	.content {
+		width: 100%;
+		margin-top: 0;
+		height: calc(100% - #{$header-height});
+		min-height: calc(100% - #{$header-height});
+	}
+
+	.inner {
+		padding: $base-height;
+	}
+}
+
