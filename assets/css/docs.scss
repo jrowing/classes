@@ -145,13 +145,13 @@ a {
   color: #000;
 }
 
-///td {
- // width: 160px;
-//  vertical-align: top;
-//}
+td {
+ width: 160px;
+  vertical-align: top;
+}
 
 .header td {
-  padding: 10px;
+ padding: 10px;
   border-bottom: 1px solid #e0e0e0;
 }
 
@@ -195,8 +195,8 @@ a {
   background: #36FFA3;
   border-radius: 24px;
   position: absolute;
-  left: 50%;
-  margin-left: -12px;
+//  left: 50%;
+  //margin-left: -12px;
   top: 0;
   border: 0 !important;
 }
