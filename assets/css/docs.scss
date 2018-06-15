@@ -45,6 +45,86 @@ a {
   background: #ccf4ff;
   color: #000;
 }
+
+td {
+ width: 160px;
+  vertical-align: top;
+}
+
+.header td {
+ padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.days td {
+  padding-top: 2px;
+  height: 100px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.days:last-child td {
+  border-bottom: 0;
+}
+
+.empty {
+  background: repeating-linear-gradient(0, #eee 0, #eee 1px, white 1px, white 5px);
+  background-size: 1px 5px;
+}
+
+.event {
+  white-space: nowrap;
+  padding: 3px;
+  height: 28px;
+  margin-bottom: 1px;
+  max-width: 184px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.day {
+  font-weight: bold;
+  padding: 6px 10px;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.today .day:before {
+  z-index: -1;
+  display: block;
+  content: "";
+  width: 24px; height: 24px;
+  background: #36FFA3;
+  border-radius: 24px;
+  position: absolute;
+  //left: 10%;
+  //margin-left: -12px;
+  top: 5;
+  border: 0 !important;
+}
+
+.past a {
+  opacity: 0.6;
+}
+
+
+
+.following-days a { font-size: 0; }
+
+.multi-days {
+  background: #f9f9f9;
+  margin-left: -2px;
+  margin-right: -2px;
+  border-bottom: 2px #CCF4FF solid;
+}
+
+.multi-days a { border: 0; }
+.multi-days a:hover { color: #000; }
+
+.no-event { color: #aaa; }
+
+
+
+
 .wrapper {
 	height: 100%;
 	width: 100%;
