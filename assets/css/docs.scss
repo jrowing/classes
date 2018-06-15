@@ -31,7 +31,20 @@ a {
 		text-decoration: none;
 	}
 }
+.month-menuitem {
+  font-size: 14px;
+  padding: 6px;
+  display: inline-block;
+  border: 0;
+  text-transform: uppercase;
+  margin: 0 10px;
+  border: 2px solid #ccf4ff;
+}
 
+.month-menuitem.active {
+  background: #ccf4ff;
+  color: #000;
+}
 .wrapper {
 	height: 100%;
 	width: 100%;
