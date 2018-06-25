@@ -51,6 +51,12 @@
     <!--[if lt IE 9]>
     <script src="lib/js/html5shiv.js"></script>
     <![endif]-->
+	<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_SVG"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+      });
+    </script>
   </head>
 
   <body>
@@ -67,6 +73,10 @@
       // Full list of configuration options available at:
       // https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
+	      math: {
+		mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+		config: 'TeX-AMS_SVG'  // See http://docs.mathjax.org/en/latest/config-files.html
+	},
         controls: true,
         progress: true,
         history: true,
@@ -83,9 +93,13 @@
           { src: '{{ "/reveal.js/plugin/markdown/markdown.js" | prepend: site.github.url }}', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
           { src: '{{ "/reveal.js/plugin/highlight/highlight.js" | prepend: site.github.url }}', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
           { src: '{{ "/reveal.js/plugin/zoom-js/zoom.js" | prepend: site.github.url }}', async: true },
-          { src: '{{ "/reveal.js/plugin/notes/notes.js" | prepend: site.github.url }}', async: true }
+          { src: '{{ "/reveal.js/plugin/notes/notes.js" | prepend: site.github.url }}', async: true },
+		  { src: 'plugin/math/math.js', async: true }
         ]
       });
+	    Reveal.addEventListener( 'slidechanged', function( event ) {
+    MathJax.Hub.Rerender(event.currentSlide);
+});
     </script>
 
   </body>
