@@ -62,9 +62,11 @@
         <div class="col-md-9">
          <h1> Theory:</h1>
 		 
-	The light waves in a ray of light from a lamp have vibrations in all planes and directions.The light is
-unpolarised. When the light passes through a polaroid filter, the vibrations will be in one plane or direction
-only. In the experiment with two pieces of polaroid, the first polarises the light. The light will then not pass
+	The light waves in a ray of light from a lamp have vibrations in all planes and directions. The light is
+unpolarised. <br>
+When the light passes through a polaroid filter, the vibrations will be in one plane or direction
+only. 
+<br> In the experiment with two pieces of polaroid, the first polarises the light. The light will then not pass
 through the second polaroid if the direction in which the second filters polarises light is at right angles to the
 polarising direction of the first polaroid. 
 
@@ -77,8 +79,7 @@ polarising direction of the first polaroid.
 
 <h1>Experimental Method:</h1>
 Investigate the variation in intensity by looking through the lamp through both polaroids and rotating one of the
-polaroids through 360o
-. Note the change in intensity that occurs.
+polaroids through 360 degrees. Note the change in intensity that occurs.
 
 
 <h1>Extension</h1>
@@ -93,25 +94,11 @@ Make sure you record your method and results clearly.
 <div class="sage">
       <script type="text/x-sage">
 	  
-	  # some library objects we need
-import math
-from numpy import zeros, arange
-from matplotlib import pyplot as plt
-# number of results - needed for modelling the theoretical line
-n_results = 8
-# theoretical value for g - needed for modelling the theoretical line
-g = 9.81
-con = 4*math.pi*math.pi # 4pi^2
-# compute the model predictions
-model = (con/g)*arange(n_results+1.0)
+	  # Define the cars vector with 5 values
+cars <- c(1, 3, 6, 4, 9)
 
-# Enter your results as pairs of figures, add more brackets when you need to:
-results = (x,y ), (x,y ), (x,y )
-
-pl1 = list_plot(results,plotjoined=False,marker='+',legend_label='Results',axes_labels=['t', 'Amplitude'])
-pl2 = list_plot(model,plotjoined=True,linestyle='--',color='red',marker='x',legend_label='Model')
-
-show(pl1+pl2)
+# Graph the cars vector with all defaults
+plot(cars)
       </script>
      </div>
 

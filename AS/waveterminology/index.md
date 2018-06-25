@@ -50,6 +50,8 @@ where:
  </section>
  <section data-background-iframe="https://www.geogebra.org/m/TUeTbXfR">
  </section>
+ <section data-background-iframe="http://jrowing.com/classes/reqprac/polarisation">
+ </section>
 </section>
 
 <section>
