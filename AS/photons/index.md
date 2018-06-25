@@ -1,35 +1,47 @@
-# Waves basics
+# Photons
 
-[This presentation](http://jrowing.com/classes/AS/waveterminology/wavetermsslides) covers some of the material in this section of the course. Preview below:
+[This presentation](http://jrowing.com/classes/AS/photons/photonslides) covers some of the material in this section of the course. Preview below:
 
-<iframe width="600" height="400" marginheight="0" marginwidth="0" src="http://jrowing.com/classes/AS/waveterminology/wavetermsslides">
+<iframe width="600" height="400" marginheight="0" marginwidth="0" src="http://jrowing.com/classes/AS/photons/photonslides">
   <p>Your browser does not support iframes.</p>
 </iframe>
 
+Notes for the Waves section are available[here](http://jrowing.com/classes/AS/waves-notes.pdf) 
 
-# Definitions:
-*A wave* is a means of transferring energy and momentum from one point to another without there being any transfer of matter between the two points.
-## Mechanical
-Mechanical waves are made up of particles vibrating e.g. sound – air molecules; water – water molecules All these waves require a substance for transmission and so none of them can travel through a vacuum.
-## Electromagnetic
-Electromagnetic waves are made up of oscillating electric and magnetic fields. e.g. light and radio These waves do not require a substance for transmission and so all of them can travel through a vacuum.
-## Progressive
-Progressive waves are waves where there is a net transfer of energy and momentum from one point to another. e.g. sound produced by a person speaking; light from a lamp
-## Stationary
-Stationary waves are waves where there is a NO net transfer of energy and momentum from one point to another. e.g. the wave on a guitar string
-## Longitudinal
-Longitudinal waves are waves where the direction of vibration of the particles is parallel to the direction in which the wave travels. e.g. sound
-## Transverse
-Transverse waves are waves where the direction of vibration of the particles or fields is perpendicular to the direction in which the wave travels. e.g. water and all electromagnetic waves Test for a transverse wave: Only TRANVERSE waves undergo polarisation.
-## Measuring Waves
-Displacement, x This is the distance of an oscillating particle from its undisturbed or equilibrium position. Amplitude, a This is the maximum displacement of an oscillating particle from its equilibrium position. It is equal to the height of a peak or the depth of a trough. Wavelength, λ This is the distance between two consecutive particles at the same phase. Example: top-of-a-peak to the next top-of-a-peak unit – metre, m Period, T This is equal to the time taken for one complete oscillation in of a particle in a wave. unit – second, s Frequency, f This is equal to the number of complete oscillations in one second performed by a particle in a wave. unit – hertz, Hz	NOTE: f = 1 / T Phase, φ This is the point that a particle is at within an oscillation. Examples: ‘top of peak’, ‘bottom of trough’ Phase is sometimes expressed in terms of an angle up to 360°. If the top of a peak is 0° then the bottom of a trough will be 180°.
+** They are not definitive **
 
-# The Wave Speed equation:
-For all waves:
-$$speed (m/s)=frequency (/s)×wavelength (m)$$
-$$c=fλ$$
+# Monochromatic light, two-source interference and photons.
 
-# Superposition of waves
-A simple wave 
-$$ A=A0sinωt+ϕ $$
+## Aims:
+1. the idea that coherent sources are monochromatic with wavefronts continuous across the width of the beam and, (when comparing
+more than one source) with a constant phase relationship 
+2. examples of coherent and incoherent sources
+3. the idea that for two source interference to be observed, the sources must have a zero or constant phase difference and have oscillations in the same direction
 
+## Coherence 
+
+This is an essential condition for the interference of waves.
+Two sources of waves are described as coherent if they emit waves
+with a constant phase difference (note that the waves do not necessarily
+have to be in phase). 
+
+Two waves arriving at a point are said to be
+coherent if there is a constant phase difference between them as they
+pass that point.
+
+
+## Interference
+
+Interference cannot be observed with light - or any form of electromagnetic
+radiation - from two separate light sources. This is because
+the phase difference between light waves from the two sources
+changes randomly and rapidly so the points of cancellation and reinforcement
+move about at random. The two sets of waves need to be produced
+from a single source, either:
+
+* by dividing the wavefront and arranging for the divided wavefronts to overlap, as in the double slit experiment 
+* dividing the amplitude of the waves using a partial reflector and arranging for the separated waves to overlap, as in thin film interference.
+
+## Path difference and Interference
+One way of demonstrating interference effects is to take a single source of waves and allow the waves to travel by two different
+paths to a detector. The difference in the distance that the wave travels in the two paths is called the "path-difference" and this term will crop up a lot as we look at some of the classic experiments.

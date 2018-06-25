@@ -1,16 +1,16 @@
 ---
 layout: slide
-title: Waves Terminology
+title: Coherence
 ---
  
  
 <section>
- <h1>Waves Terminology</h1>
+ <h1>Monochromatic light, Interference and Photons</h1>
 
 </section>
 <section>
 <section data-markdown data-notes="^Note:">
-# Basics
+# 
 </section>
 <section data-background-iframe="https://www.geogebra.org/m/SxNZa3Q2">
 </section>
