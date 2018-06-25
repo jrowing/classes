@@ -1,5 +1,5 @@
 ---
-layout: slides
+layout: slide
 title: Waves Terminology
 ---
  
