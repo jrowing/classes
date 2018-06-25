@@ -8,7 +8,7 @@ navigation: 3
 
 | Date       | Lesson          | Start Time | End time | Description                           | Link to materials | 
 |------------|-----------------|------------|----------|---------------------------------------|-------------------| 
-| 10/09/2018 | 12G Lesson 1    | 13:45      | 14:45    | Wave terminology                      |                   | 
+| 10/09/2018 | 12G Lesson 1    | 13:45      | 14:45    | Wave terminology                      |  [Link](http://jrowing.com/classes/AS/waveterminology/)                 | 
 | 12/09/2018 | 12G Lesson 2    | 15:30      | 16:30    | Polarisation                          |                   | 
 | 19/09/2018 | 12G Homework 0  | 15:00      | 15:25    | None Due                              |                   | 
 | 21/09/2018 | 12G Lesson 3    | 09:00      | 10:30    | "Wavefronts, Phase and superposition" |                   | 
