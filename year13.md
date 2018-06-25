@@ -9,12 +9,12 @@ navigation: 4
 | Date       | Lesson          | Start Time | End time | Description                           | Link to materials | 
 |------------|-----------------|------------|----------|---------------------------------------|-------------------| 
 | 12/09/2018 | 13B Lesson 1    | 10:45      | 12:15    | Physics with calculus                 |                   | 
-| 12/09/2018 | 13H Homework 0  | 15:00      | 15:25    | None Due                              |                   | 
+| 12/09/2018 | 13H Homework 0  | 15:00      | 15:25    | None Due                              | N/A - Introductions               | 
 | 13/09/2018 | 13B Lesson 2    | 15:30      | 16:30    | Physics with calculus                 |                   | 
 | 14/09/2018 | 13H Lesson 1    | 09:00      | 10:30    | Physics with calculus                 |                   | 
 | 17/09/2018 | 13H Lesson 2    | 13:45      | 14:45    | Physics with calculus                 |                   | 
 | 18/09/2018 | 13B Lesson 3    | 09:00      | 10:30    | Physics with calculus                 |                   | 
-| 19/09/2018 | 13B Homework 0  | 13:45      | 14:45    | Calculus H/w                          |                   | 
+| 19/09/2018 | 13B Homework 0  | 13:45      | 14:45    | Calculus H/w                          |N/A - Introductions                   | 
 | 19/09/2018 | 13H Lesson 3    | 15:30      | 16:30    | Physics with calculus                 |                   | 
 | 26/09/2018 | 13B Lesson 4    | 10:45      | 12:15    | Kepler's laws                         |                   | 
 | 26/09/2018 | 13H Homework 1  | 15:00      | 15:25    | Calculus H/w                          |                   | 
