@@ -16,6 +16,22 @@ title: Waves Terminology
 </section>
 </section>
 
+
+<section>
+<section data-markdown data-notes="^Note:">
+# The Wave Equation
+</section>
+<section data-markdown data-notes="^Note:">
+$$c = f \lambda $$
+
+where:
+* $c$ is the wave speed
+* $ f$ is the frequency in Hz or $s^{-1}$
+* $ \lambda$ is the wavelength in m
+</section>
+</section>
+
+
 <section>
 <section data-markdown data-notes="^Note:">
 # Superposition
@@ -36,10 +52,10 @@ title: Waves Terminology
  </section>
 </section>
 
+<section>
 <section data-markdown data-notes="^Note:">
-# Parts
-1. What and Why?
-2. A rant about the hangups
-3. The language of practicals
-4. Have a play
+# Wave Fronts
+</section>
+<section data-background-iframe="https://phet.colorado.edu/en/simulation/legacy/wave-interference">
+ </section>
 </section>
