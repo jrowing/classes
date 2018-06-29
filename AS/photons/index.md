@@ -6,7 +6,7 @@
   <p>Your browser does not support iframes.</p>
 </iframe>
 
-Notes for the Waves section are available[here](http://jrowing.com/classes/AS/waves-notes.pdf) 
+Notes for the Waves section are available [here](http://jrowing.com/classes/AS/waves-notes.pdf) 
 
 ** They are not definitive **
 

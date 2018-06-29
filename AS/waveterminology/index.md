@@ -5,7 +5,7 @@
 <iframe width="600" height="400" marginheight="0" marginwidth="0" src="http://jrowing.com/classes/AS/waveterminology/wavetermsslides">
   <p>Your browser does not support iframes.</p>
 </iframe>
-Notes for the Waves section are available[here](http://jrowing.com/classes/AS/waves-notes.pdf) 
+Notes for the Waves section are available [here](http://jrowing.com/classes/AS/waves-notes.pdf) 
 
 # Definitions:
 *A wave* is a means of transferring energy and momentum from one point to another without there being any transfer of matter between the two points.
