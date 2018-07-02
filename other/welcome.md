@@ -12,22 +12,26 @@ title: Marshmallow Challenge
 <br>
 <br>
 
-<img src="http://jrowing.com/iop/presentations/images/emsnew.PNG" width="270">
+<img src="http://jrowing.com/iop/presentations/images/emsnew.PNG" width="400">
 </section>
 <section data-markdown data-notes="^Note:">
+# Instruction 1:
 * Team of four
-* B - getting experiments to work
-* C  - making experiments interesting
-* D - getting valuable learning outcomes 
 </section>
 
+<section data-markdown data-notes="^Note:">
+# The task is simple: 
+## in eighteen minutes, teams must build the tallest free-standing structure out of 20 sticks of spaghetti, one meter of tape, one meter of string, and one marshmallow. The marshmallow needs to be on top.
+</section>
 
 <section data-markdown data-notes="^Note:">
-# Parts
+# Rules
 1. Build the Tallest Freestanding Structure
 2. The Entire Marshmallow must be on top
 3. Use as Much or as Little of the Kit
 4. Break up the Spaghetti, String or Tape
 5. The Challenge Lasts 18 minutes
 </section>
-
+<section>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vQKcrVDujVs?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</section>
