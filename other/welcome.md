@@ -21,16 +21,13 @@ title: Marshmallow Challenge
 * D - getting valuable learning outcomes 
 </section>
 
-<section data-background-iframe="https://www.youtube.com/watch?v=H0_yKBitO8M">
-</section>
-
- 
 
 <section data-markdown data-notes="^Note:">
 # Parts
-1. What and Why?
-2. A rant about the hangups
-3. The language of practicals
-4. Have a play
+1. Build the Tallest Freestanding Structure
+2. The Entire Marshmallow must be on top
+3. Use as Much or as Little of the Kit
+4. Break up the Spaghetti, String or Tape
+5. The Challenge Lasts 18 minutes
 </section>
 
