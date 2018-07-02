@@ -32,8 +32,7 @@ title: Marshmallow Challenge
 4. Break up the Spaghetti, String or Tape
 5. The Challenge Lasts 18 minutes
 </section>
-<section>
-<data-background-iframe="https://www.youtube.com/embed/vQKcrVDujVs">
+<section data-background-iframe="https://www.youtube.com/embed/vQKcrVDujVs">
 </section>
  
  
