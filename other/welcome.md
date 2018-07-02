@@ -12,7 +12,7 @@ title: Marshmallow Challenge
 <br>
 <br>
 
-<img src="http://jrowing.com/iop/presentations/images/emsnew.PNG" width="270" style="position: absolute; bottom: 0px; right: 0px;">
+<img src="http://jrowing.com/iop/presentations/images/emsnew.PNG" width="270">
 </section>
 <section data-markdown data-notes="^Note:">
 * Team of four
