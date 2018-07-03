@@ -39,6 +39,8 @@ The task is simple:
 ## Who performs poorly?
 Recent business school graduates.
 
+</section>
+ <section data-markdown data-notes="^Note:">
 
 ## Who performs well?
 Primary school children
